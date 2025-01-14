@@ -3,10 +3,11 @@
 # Atualiza o sistema
 sudo apt update && sudo apt upgrade -y
 
-# Instala o Alacritty
+# Instala dependências necessárias
+sudo apt install -y software-properties-common
 sudo add-apt-repository ppa:aslatter/ppa -y
 sudo apt update
-sudo apt install alacritty -y
+sudo apt install -y alacritty
 
 # Cria o diretório de configuração se não existir
 mkdir -p ~/.config/alacritty
